@@ -1,3 +1,9 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .tiles{
   width: 40px;
   height: 40px;
@@ -6,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* text-transform: uppercase; */
+   text-transform: uppercase;
 }
 
 .line{

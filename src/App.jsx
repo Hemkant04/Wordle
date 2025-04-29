@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 
-const API_URL='https://api.frontendexpert.io/api/fe/wordle-words';
+const API_URL = '/wordleWords.json';
 const  WORD_LENGTH = 5;
 
 function App() {
@@ -71,9 +71,13 @@ function App() {
       const words = await response.json();
       const randomWord = words[Math.floor(Math.random() * words.length )];
       setSolution(randomWord.toLowerCase());
+      
       }catch (error) {
         console.error('Failed to fetch words:', error);
       }
+
+      
+      
 
 
     };
